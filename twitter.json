@@ -1,5 +1,5 @@
 {
-  "$id": "https:\/\/raw.githubusercontent.com\/Valota\/data-syntax-twitter\/v2.0.0\/twitter.json",
+  "$id": "https:\/\/raw.githubusercontent.com\/Valota\/data-syntax-twitter\/v3.0.0\/twitter.json",
   "$schema": "http:\/\/json-schema.org\/draft-07\/schema#",
   "description": "Twitter data syntax for Valotalive",
   "type": "array",
@@ -10,10 +10,12 @@
 		"type": [
 		  "string",
 		  "integer"
-		]
+		],
+		"description": "id"
 	  },
 	  "lang": {
-		"type": "string"
+		"type": "string",
+		"description": "language"
 	  },
 	  "text": {
 		"type": "string"
@@ -25,14 +27,16 @@
 			"type": [
 			  "string",
 			  "integer"
-			]
+			],
+			"description": "id"
 		  },
 		  "url": {
 			"type": "string",
-			"format": "uri"
+			"description": "uri to content"
 		  },
 		  "lang": {
-			"type": "string"
+			"type": "string",
+			"description": "language"
 		  },
 		  "name": {
 			"type": "string"
@@ -117,17 +121,19 @@
 		  },
 		  "profile_image_url": {
 			"type": "string",
-			"format": "uri"
+			"description": "uri to content"
 		  },
 		  "profile_banner_url": {
 			"type": "string",
-			"format": "uri"
+			"description": "uri to content"
 		  },
 		  "profile_link_color": {
-			"type": "string"
+			"type": "string",
+			"description": "color"
 		  },
 		  "profile_text_color": {
-			"type": "string"
+			"type": "string",
+			"description": "color"
 		  },
 		  "contributors_enabled": {
 			"type": [
@@ -149,20 +155,23 @@
 		  },
 		  "profile_image_url_https": {
 			"type": "string",
-			"format": "uri"
+			"description": "uri to content"
 		  },
 		  "profile_background_color": {
-			"type": "string"
+			"type": "string",
+			"description": "color"
 		  },
 		  "profile_sidebar_fill_color": {
-			"type": "string"
+			"type": "string",
+			"description": "color"
 		  },
 		  "profile_background_image_url": {
 			"type": "string",
-			"format": "uri"
+			"description": "uri to content"
 		  },
 		  "profile_sidebar_border_color": {
-			"type": "string"
+			"type": "string",
+			"description": "color"
 		  },
 		  "profile_use_background_image": {
 			"type": [
@@ -172,7 +181,7 @@
 		  },
 		  "profile_background_image_url_https": {
 			"type": "string",
-			"format": "uri"
+			"description": "uri to content"
 		  }
 		}
 	  },
@@ -195,7 +204,7 @@
 			  "properties": {
 				"url": {
 				  "type": "string",
-				  "format": "uri"
+				  "description": "uri to content"
 				},
 				"indices": {
 				  "type": "array",
@@ -205,11 +214,11 @@
 				},
 				"display_url": {
 				  "type": "string",
-				  "format": "uri"
+				  "description": "uri to content"
 				},
 				"expanded_url": {
 				  "type": "string",
-				  "format": "uri"
+				  "description": "uri to content"
 				}
 			  },
 			  "required": [
@@ -229,11 +238,12 @@
 				  "type": [
 					"string",
 					"integer"
-				  ]
+				  ],
+				  "description": "id"
 				},
 				"url": {
 				  "type": "string",
-				  "format": "uri"
+				  "description": "uri to content"
 				},
 				"type": {
 				  "type": "string"
@@ -310,19 +320,19 @@
 				},
 				"media_url": {
 				  "type": "string",
-				  "format": "uri"
+				  "description": "uri to content"
 				},
 				"display_url": {
 				  "type": "string",
-				  "format": "uri"
+				  "description": "uri to content"
 				},
 				"expanded_url": {
 				  "type": "string",
-				  "format": "uri"
+				  "description": "uri to content"
 				},
 				"media_url_https": {
 				  "type": "string",
-				  "format": "uri"
+				  "description": "uri to content"
 				}
 			  },
 			  "required": [
